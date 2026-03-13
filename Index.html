@@ -1,140 +1,84 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-<title>Quiniela Liga MX</title>
-
-<style>
-
-body{
-font-family: Arial;
-background:#f2f2f2;
-text-align:center;
-}
-
-table{
-margin:auto;
-border-collapse: collapse;
-width:90%;
-background:white;
-}
-
-td,th{
-border:1px solid #ccc;
-padding:10px;
-}
-
-.header{
-font-size:28px;
-margin:20px;
-font-weight:bold;
-}
-
-button{
-padding:10px 20px;
-margin-top:20px;
-font-size:16px;
-}
-
-</style>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiniela Liga MX</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f9;
+            text-align: center;
+            padding: 20px;
+        }
+        header {
+            background-color: #004d40;
+            color: white;
+            padding: 20px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+        }
+        .partido {
+            background: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            margin: 15px auto;
+            border-radius: 12px;
+            max-width: 500px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .equipo { font-weight: bold; flex: 1; }
+        input {
+            width: 50px;
+            padding: 8px;
+            text-align: center;
+            font-size: 18px;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            margin: 0 10px;
+        }
+        button {
+            background-color: #d32f2f;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 10px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+    </style>
 </head>
-
 <body>
 
-<div class="header">
-QUINIELA LIGA MX
-</div>
+    <header>
+        <h1>🏆 Mi Quiniela Liga MX</h1>
+        <p>Jornada 1 - ¡Haz tu pronóstico!</p>
+    </header>
 
-<table>
+    <main>
+        <div class="partido">
+            <span class="equipo">América</span>
+            <input type="number" placeholder="0" min="0">
+            <span>vs</span>
+            <input type="number" placeholder="0" min="0">
+            <span class="equipo">Chivas</span>
+        </div>
 
-<tr>
-<th>Local</th>
-<th>L</th>
-<th>E</th>
-<th>V</th>
-<th>Visitante</th>
-</tr>
+        <div class="partido">
+            <span class="equipo">Cruz Azul</span>
+            <input type="number" placeholder="0" min="0">
+            <span>vs</span>
+            <input type="number" placeholder="0" min="0">
+            <span class="equipo">Pumas</span>
+        </div>
 
-<tr>
-<td>Puebla</td>
-<td><input type="radio" name="p1"></td>
-<td><input type="radio" name="p1"></td>
-<td><input type="radio" name="p1"></td>
-<td>Necaxa</td>
-</tr>
+        <button type="button">Guardar Resultados</button>
+    </main>
 
-<tr>
-<td>Juárez</td>
-<td><input type="radio" name="p2"></td>
-<td><input type="radio" name="p2"></td>
-<td><input type="radio" name="p2"></td>
-<td>Monterrey</td>
-</tr>
-
-<tr>
-<td>San Luis</td>
-<td><input type="radio" name="p3"></td>
-<td><input type="radio" name="p3"></td>
-<td><input type="radio" name="p3"></td>
-<td>Pachuca</td>
-</tr>
-
-<tr>
-<td>Chivas</td>
-<td><input type="radio" name="p4"></td>
-<td><input type="radio" name="p4"></td>
-<td><input type="radio" name="p4"></td>
-<td>Santos</td>
-</tr>
-
-<tr>
-<td>León</td>
-<td><input type="radio" name="p5"></td>
-<td><input type="radio" name="p5"></td>
-<td><input type="radio" name="p5"></td>
-<td>Tijuana</td>
-</tr>
-
-<tr>
-<td>Toluca</td>
-<td><input type="radio" name="p6"></td>
-<td><input type="radio" name="p6"></td>
-<td><input type="radio" name="p6"></td>
-<td>Atlas</td>
-</tr>
-
-<tr>
-<td>Pumas</td>
-<td><input type="radio" name="p7"></td>
-<td><input type="radio" name="p7"></td>
-<td><input type="radio" name="p7"></td>
-<td>Cruz Azul</td>
-</tr>
-
-<tr>
-<td>Tigres</td>
-<td><input type="radio" name="p8"></td>
-<td><input type="radio" name="p8"></td>
-<td><input type="radio" name="p8"></td>
-<td>Querétaro</td>
-</tr>
-
-<tr>
-<td>América</td>
-<td><input type="radio" name="p9"></td>
-<td><input type="radio" name="p9"></td>
-<td><input type="radio" name="p9"></td>
-<td>Mazatlán</td>
-</tr>
-
-</table>
-
-<br><br>
-
-<input type="text" placeholder="Nombre del participante">
-
-<br>
-
-<button>Enviar</button>
 </body>
-</html
+</html>
+
